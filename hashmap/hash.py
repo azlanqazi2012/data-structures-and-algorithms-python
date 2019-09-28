@@ -72,15 +72,19 @@ class HashMap:
       retrieval_collisions += 1
 
     return
-  
-hash_map = HashMap(15)
-hash_map.assign('gabbro', 'igneous')
-hash_map.assign('sandstone', 'sedimentary')
-hash_map.assign('gneiss', 'metamorphic')
 
-print(hash_map.retrieve('gabbro'))
-print(hash_map.retrieve('sandstone'))
-print(hash_map.retrieve('gneiss'))
+if __name__ == '__main__':
+  hash_map = HashMap(15)
+  hash_map.assign('gabbro', 'igneous')
+  hash_map.assign('bbroga', 'igneous2')
+  hash_map.assign('sandstone', 'sedimentary')
+  hash_map.assign('gneiss', 'metamorphic')
+
+
+  print(hash_map.retrieve('gabbro'))
+  print(hash_map.retrieve('bbroga'))
+  print(hash_map.retrieve('sandstone'))
+  print(hash_map.retrieve('gneiss'))
 
 # Some things to consider
 # How would you delete a key-value pair from this hash map?
