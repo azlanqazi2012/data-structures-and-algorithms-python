@@ -37,14 +37,12 @@ blossom = HashMap(len(flower_definitions))
 for flower in flower_definitions:
   blossom.assign(flower[0], flower[1])
   
-
 print(blossom.retrieve('begonia'))
 print(blossom.retrieve('chrysanthemum'))
 print(blossom.retrieve('carnation'))
 print(blossom.retrieve('daisy'))
 print(blossom.retrieve('hyacinth'))
 print(blossom.retrieve('dog'))
-
 
 """
 Indexes:
