@@ -31,10 +31,26 @@ class HashMap:
     for item in list_at_index:
       if key == item[0]:
         return item[1]
-      return None
+    return key + " not found!"
     
 blossom = HashMap(len(flower_definitions))
 for flower in flower_definitions:
   blossom.assign(flower[0], flower[1])
   
+
+print(blossom.retrieve('begonia'))
+print(blossom.retrieve('chrysanthemum'))
+print(blossom.retrieve('carnation'))
 print(blossom.retrieve('daisy'))
+print(blossom.retrieve('hyacinth'))
+print(blossom.retrieve('dog'))
+
+
+"""
+Indexes:
+Begonia = 11
+Chrysanthemum = 2
+Carnation = 7
+Daisy = 6
+Hyacinth = 2
+"""
