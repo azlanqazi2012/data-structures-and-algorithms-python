@@ -31,8 +31,6 @@ def quicksort(list, start, end):
   quicksort(list, less_than_pointer + 1, end)
 
 
-    
-  
 list = [5,3,1,7,4,6,2,8]
 shuffle(list)
 print("PRE SORT: ", list)
